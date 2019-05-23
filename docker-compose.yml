@@ -1,0 +1,19 @@
+version: '3.4'
+
+services:
+  app:
+    image: dockertest/app
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    expose:
+      - "5100"
+  proxy:
+    image: dockertest/proxy
+    build:
+      context:  ./nginx
+      dockerfile: Dockerfile
+    ports:
+      - "80:80"
+    links:
+      - app
