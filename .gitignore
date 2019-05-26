@@ -2,3 +2,5 @@
 [Dd]ebug/
 obj/
 .vscode/
+
+app/**/out/
