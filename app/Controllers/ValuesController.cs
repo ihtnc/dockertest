@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 
-namespace testapi.Controllers
+namespace dockertest.app.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
